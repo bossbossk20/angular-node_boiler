@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>RPi</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="TodoListController as app">
+{{app.test}}
+
+<input type="checkbox" name="btn" id="btn" ng-model="app.value" ng-click="app.click('koy')">
+
+<button ng-click="app.click('koy')">Add Koy</button>
+<br>
+<button ng-click="app.show()">show</button>
+</body>
+</html>
